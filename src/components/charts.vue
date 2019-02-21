@@ -21,7 +21,7 @@
           <div id="oa-chart"></div>
           <div class="oa-put">
             <select v-model="year" style="width:200px;" size="1">
-              <option v-for="item in yearList":value="item.value":key="item.value" v-bind:year="item.value">{{item.label}}</option>
+              <option v-for="item in yearList" :value="item.value" :key="item.value" v-bind:year="item.value">{{item.label}}</option>
             </select>
             <el-button @click="addChart">叠加分析</el-button>
             <el-button @click="clearChart">清除</el-button>

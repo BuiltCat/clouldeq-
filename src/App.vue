@@ -17,14 +17,14 @@ export default {
   },
   mounted() {
     this.$refs.hollow.initChart();
-    const dataView = "http://172.17.130.212:8082/ceServer/public/dataView";
+    const dataView = "http://47.101.35.46/ceServer_php/public/dataView";
     const getLevelData =
-      "http://172.17.130.212:8082/ceServer/public/getLevelData";
+      "http://47.101.35.46/ceServer_php/public/getLevelData";
 
-    const groupByMg = "http://172.17.130.212:8082/ceServer/public/groupByMg";
+    const groupByMg = "http://47.101.35.46/ceServer_php/public/groupByMg";
     
       const getEarthquakeNumber =
-        "http://172.17.130.212:8082/ceServer/public/getEarthquakeNumber";
+        "http://47.101.35.46/ceServer_php/public/getEarthquakeNumber";
     axios
       .get(dataView)
       .then(

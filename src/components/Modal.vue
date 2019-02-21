@@ -94,7 +94,7 @@ export default {
   },
   methods:{
     getEarthPreData(){
-      const getEarthPreData = "http://172.17.130.212:8082/ceServer/public/earthquakePrediction/20170101/5/6/7/";
+      const getEarthPreData = "http://47.101.35.46/ceServer_php/public/earthquakePrediction/20170101/5/6/7/";
       axios
         .get(getEarthPreData)
         .then(

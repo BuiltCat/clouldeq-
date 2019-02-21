@@ -50,7 +50,6 @@
         <label for="发震震级">发震震级</label>
         <input v-model="aftershockdata.startmag"  type="Number" min="1" max="8">
         </p>
-        </p>
         <p style="text-align:center">
         <label for="预测震级">预测震级</label>
         <input v-model="aftershockdata.endmag"  type="Number" min="1" max="8">
@@ -142,7 +141,7 @@ export default {
       this.$emit('changeLoading');
       this.analysis = false;
       const analysisRusults =
-        "http://172.17.130.212:8082/ceServer/public/eqrart/"+this.analysisdata.data+"/"+this.analysisdata.lat+"/"+this.analysisdata.lon;
+        "http://47.101.35.46/ceServer_php/public/eqrart/"+this.analysisdata.data+"/"+this.analysisdata.lat+"/"+this.analysisdata.lon;
       axios
         .get(analysisRusults)
         .then(
